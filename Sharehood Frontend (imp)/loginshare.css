@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(20, 146, 20);
+    /* Green Gradient */
+    overflow: hidden;
+}
+
+/* Wrapper for Centered Login Form */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Login Container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 15px;
+    /* Modern rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Heading */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    /* More rounded corners */
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f7f7f7;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+    font-weight: 600;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+    border-color: #007736;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Style */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #33a537fa;
+    /* Green Button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    /* More rounded button */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #06960d;
+    /* Darker Green on Hover */
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: rgb(29, 2, 2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 30px 40px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .input-group input,
+    .btn {
+        padding: 12px;
+    }
+}
